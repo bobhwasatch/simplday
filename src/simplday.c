@@ -29,8 +29,8 @@ void line_layer_update_callback(Layer *l, GContext *ctx)
     (void)l;
 
     graphics_context_set_stroke_color(ctx, GColorWhite);
-    graphics_draw_line(ctx, GPoint(8, 81), GPoint(131, 81));
-    graphics_draw_line(ctx, GPoint(8, 82), GPoint(131, 82));
+    graphics_draw_line(ctx, GPoint(8, 97), GPoint(131, 97));
+    graphics_draw_line(ctx, GPoint(8, 98), GPoint(131, 98));
 }
 
 
@@ -105,7 +105,7 @@ void app_init(void)
     text_layer_set_font(text_time_layer, font_time);
     layer_add_child(window_layer, text_layer_get_layer(text_time_layer));
 
-    line_layer = layer_create(layer_get_frame(window_layer));
+    line_layer = layer_create(GRect(0, 0, 144, 168));
     layer_set_update_proc(line_layer, line_layer_update_callback);
     layer_add_child(window_layer, line_layer);
 
