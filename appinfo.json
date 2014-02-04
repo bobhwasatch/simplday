@@ -4,7 +4,7 @@
   "longName": "SimplDay",
   "companyName": "Bob Hauck <bobh@haucks.org>",
   "versionCode": 2,
-  "versionLabel": "2.0.0",
+  "versionLabel": "2.0.1",
   "watchapp": {
     "watchface": true
   },
